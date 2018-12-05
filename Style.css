@@ -1,0 +1,82 @@
+/* MAKING OF SQUARES */
+body{
+  font-family: Kirang Haerang, sans-serif;
+}
+.square1 {
+  height: 50px;
+  width: 50px;
+  background-color: #02b3e4;
+}
+.square2 {
+  height: 50px;
+  width: 50px;
+  background-color: #2d3c49;
+}
+.square3 {
+  height: 50px;
+  width: 50px;
+  background-color: #7d97ad;
+}
+.secondary_image{
+  width:100px;
+  height: 100px;
+  border-radius: 1em;
+}
+.WLogo{
+  width: 125px;
+  height: 90px;
+}
+.presentation{
+  text-align: right;
+}
+/* position */
+.container, header{
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+.box{
+  width:100%;
+}
+header{
+  height:20%;
+  margin:0% 0% 0% 10%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.links{
+  text-align: center;
+  align-content: center;
+}
+.squares{
+  margin-right: 5%;
+}
+@media screen and (max-width:500px){
+.squares{
+  width:100%;
+  order:1;
+  flex-direction: row;
+}
+.mainImage{
+  width:100%;
+  order:2;
+}
+.links{
+  width:100%;
+  order:3;
+  flex-flow: wrap;
+  display: flexbox;
+}
+@media screen and (min-width:501px){
+.squares{
+  width:20%;
+  order:-1;
+}
+.mainImage{
+  width:80%;
+  order:1;
+}
+.links{
+  width:200%;
+  order:2;
+  display: inline-block;
+}
